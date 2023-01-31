@@ -2,14 +2,14 @@ import { Prisma } from "@prisma/client";
 // import { GraphQLError } from "apollo-server-core";
 import { GraphQLError } from "graphql";
 import { withFilter } from "graphql-subscriptions";
-import { userIsConversationParticipant } from "../../util/functions";
+import { userIsConversationParticipant } from "../../util/functions.mjs";
 import {
   GraphQLContext,
   MessagePopulated,
   SendMessageArguments,
   SendMessageSubscriptionPayload,
-} from "../../util/types";
-import { conversationPopulated } from "./conversations";
+} from "../../util/types.mjs";
+import { conversationPopulated } from "./conversations.mjs";
 
 const resolvers = {
   Query: {

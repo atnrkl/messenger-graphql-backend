@@ -1,6 +1,6 @@
-import userTypeDefs from "./users";
+import userTypeDefs from "./users.mjs";
 import conversationTypeDefs from "./conversations";
-import messageTypeDefs from "./messages";
+import messageTypeDefs from "./messages.mjs";
 
 const typeDefs = [userTypeDefs, conversationTypeDefs, messageTypeDefs];
 
