@@ -1,8 +1,8 @@
 import merge from "lodash.merge";
 import conversationResolvers from "./conversations";
-import messageResolvers from "./messages.js";
-import userResolvers from "./users.js";
-import scalarResolvers from "./scalars.js";
+import messageResolvers from "./messages";
+import userResolvers from "./users";
+import scalarResolvers from "./scalars";
 
 const resolvers = merge(
   {},

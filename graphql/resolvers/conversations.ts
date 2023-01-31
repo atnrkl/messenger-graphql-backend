@@ -1,8 +1,9 @@
 import { Prisma } from "@prisma/client";
+
 // import { GraphQLError } from "apollo-server-core";
 import { GraphQLError } from "graphql";
 import { withFilter } from "graphql-subscriptions";
-import { userIsConversationParticipant } from "../../util/functions.js";
+import { userIsConversationParticipant } from "../../util/functions";
 import {
   ConversationPopulated,
   ConversationUpdatedSubscriptionData,
