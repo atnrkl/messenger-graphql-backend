@@ -4,8 +4,8 @@ import { Context } from "graphql-ws/lib/server";
 import {
   conversationPopulated,
   participantPopulated,
-} from "../graphql/resolvers/conversations.mjs";
-import { messagePopulated } from "../graphql/resolvers/messages.mjs";
+} from "../graphql/resolvers/conversations.js";
+import { messagePopulated } from "../graphql/resolvers/messages.js";
 
 /**
  * Server Configuration

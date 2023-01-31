@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { CreateUsernameResponse, ParticipantPopulated } from "./types.mjs";
+import { CreateUsernameResponse, ParticipantPopulated } from "./types.js";
 
 export async function verifyAndCreateUsername(
   args: { userId: string; username: string },
