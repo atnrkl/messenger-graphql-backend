@@ -93,7 +93,7 @@ const main = async () => {
   await server.start();
 
   const corsOptions = {
-    origin: process.env.CLIENT_ORIGIN,
+    origin: "https://messenger-graphql-frontend.vercel.app",
     credentials: true,
   };
 
