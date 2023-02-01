@@ -102,17 +102,6 @@ const main = async () => {
     cors<cors.CorsRequest>({
       origin: "https://messenger-graphql-frontend.vercel.app",
       credentials: true,
-      methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
-      allowedHeaders: [
-        "Content-Type",
-        "Origin",
-        "X-Requested-With",
-        "Accept",
-        "x-client-key",
-        "x-client-token",
-        "x-client-secret",
-        "Authorization",
-      ],
     }),
     json(),
     expressMiddleware(server, {
