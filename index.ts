@@ -99,7 +99,10 @@ const main = async () => {
 
   app.use(
     "/graphql",
-    cors<cors.CorsRequest>(corsOptions),
+    cors<cors.CorsRequest>({
+      origin: "https://messenger-graphql-frontend.vercel.app",
+      credentials: true,
+    }),
     json(),
     expressMiddleware(server, {
       context: async ({ req }): Promise<GraphQLContext> => {
