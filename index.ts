@@ -112,13 +112,13 @@ const main = async () => {
 
   // server.applyMiddleware({ app, path: "/graphql", cors: corsOptions });
 
-  const PORT = 4000;
+  const PATH = "https://messenger-graphql.onrender.com";
 
   // Now that our HTTP server is fully set up, we can listen to it.
   await new Promise<void>((resolve) =>
-    httpServer.listen({ port: PORT }, resolve)
+    httpServer.listen({ path: PATH }, resolve)
   );
-  console.log(`Server is now running on http://localhost:${PORT}/graphql`);
+  console.log(`Server is now running on ${PATH}/graphql`);
 };
 
 main().catch((err) => console.log(err));
